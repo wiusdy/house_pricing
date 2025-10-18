@@ -1,14 +1,14 @@
-from house_price_estimation.build_model.task.config import BuildModelTaskConfig
+from build_model.task.config import BuildModelTaskConfig
 
-from house_price_estimation.build_model.job.config import BuildModelJobConfig
-from house_price_estimation.build_model.job.build_model import BuildModelJob
+from build_model.job.config import BuildModelJobConfig
+from build_model.job.build_model import BuildModelJob
 
 build_model_task_config = BuildModelTaskConfig(
     sales_path="/home/wiusdy/PhData/house_price_estimation/data/kc_house_data.csv",
     demographics_path="/home/wiusdy/PhData/house_price_estimation/data/zipcode_demographics.csv",
     sales_column_selection=[
-        "price", "bedrooms", "bathrooms", "sqft_living", "sqft_lot",
-        "floors", "sqft_above", "sqft_basement", "zipcode"
+        'price', 'bedrooms', 'bathrooms', 'sqft_living', 'sqft_lot', 'floors',
+        'sqft_above', 'sqft_basement', 'zipcode'
     ],
     model_output_path="/home/wiusdy/PhData/house_price_estimation/model/",
     data_dtype={

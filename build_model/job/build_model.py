@@ -1,6 +1,6 @@
-from house_price_estimation.build_model.job.config import BuildModelJobConfig
-from house_price_estimation.build_model.task.create_model import BuildModelTask
-from house_price_estimation.core.logger import get_logger
+from build_model.job.config import BuildModelJobConfig
+from build_model.task.create_model import BuildModelTask
+from core.logger import get_logger
 
 class BuildModelJob:
     def __init__(self):

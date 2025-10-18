@@ -1,0 +1,79 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2025-10-18T20:00:00.000Z",
+  "__export_source": "insomnia.desktop.app:v2025.4.0",
+  "resources": [
+    {
+      "_id": "req_1",
+      "parentId": "wrk_1",
+      "modified": 1697678400000,
+      "created": 1697678400000,
+      "url": "http://localhost:8000/predict",
+      "name": "House Price Prediction Test 1",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\"bedrooms\": 3, \"bathrooms\": 2.0, \"sqft_living\": 1800, \"sqft_lot\": 5000, \"floors\": 1.0, \"sqft_above\": 1800, \"sqft_basement\": 0, \"zipcode\": \"98001\"}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "_type": "request"
+    },
+    {
+      "_id": "req_2",
+      "parentId": "wrk_1",
+      "modified": 1697678400000,
+      "created": 1697678400000,
+      "url": "http://localhost:8000/predict",
+      "name": "House Price Prediction Test 2",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\"bedrooms\": 4, \"bathrooms\": 3.5, \"sqft_living\": 2500, \"sqft_lot\": 7500, \"floors\": 2.0, \"sqft_above\": 1500, \"sqft_basement\": 1000, \"zipcode\": \"98103\"}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "_type": "request"
+    },
+    {
+      "_id": "req_3",
+      "parentId": "wrk_1",
+      "modified": 1697678400000,
+      "created": 1697678400000,
+      "url": "http://localhost:8000/predict",
+      "name": "House Price Prediction Test 3",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\"bedrooms\": 2, \"bathrooms\": 1.0, \"sqft_living\": 900, \"sqft_lot\": 2000, \"floors\": 1.0, \"sqft_above\": 900, \"sqft_basement\": 0, \"zipcode\": \"98052\"}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_1",
+      "parentId": null,
+      "modified": 1697678400000,
+      "created": 1697678400000,
+      "name": "House Price API Tests",
+      "_type": "workspace"
+    }
+  ]
+}
